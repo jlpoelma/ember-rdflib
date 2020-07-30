@@ -1,6 +1,7 @@
 cd "$(dirname "$0")"
-git clone https://github.com/linkeddata/rdflib.js.git
+git clone https://github.com/jlpoelma/rdflib.js.git
 cd rdflib.js
+git checkout cors_proxy_fix
 npm install
 rm -f webpack.config.js
 cp ../webpack.config.js ./
